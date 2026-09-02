@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <h1>Rock Paper Scissors</h1>
+        <p class="mode">Player vs Computer</p>
+        <button type="button" id="exit-btn" class="exit-btn">Exit</button>
+      </header>
+
+      <section id="play-area" class="play-area">
+        <p class="score" aria-live="polite">
+          You <strong id="player-score">0</strong>
+          · Computer <strong id="computer-score">0</strong>
+          · Draws <strong id="draw-score">0</strong>
+        </p>
+
+        <div id="result" class="result" aria-live="polite">
+          Choose Rock, Paper, or Scissors to start.
+        </div>
+
+        <div class="moves" role="group" aria-label="Your move">
+          <button type="button" class="move-btn" data-move="rock">Rock</button>
+          <button type="button" class="move-btn" data-move="paper">Paper</button>
+          <button type="button" class="move-btn" data-move="scissors">Scissors</button>
+        </div>
+      </section>
+
+      <section id="exit-screen" class="exit-screen hidden">
+        <h2>Thanks for playing</h2>
+        <p id="final-score"></p>
+        <p class="hint">You can close this tab whenever you like.</p>
+      </section>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
